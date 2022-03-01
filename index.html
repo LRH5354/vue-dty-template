@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>vue 模板</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+  <style>
+    html {
+      height: 100%;
+      overflow: hidden !important;
+    }
+
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      color: #FFFFFF;
+      background-color: #333;
+    }
+  </style>
+  <!-- <link rel="stylesheet" href="/static/font-awesome.css"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css" rel="stylesheet">
+</head>
+<body>
+  <div id="app"></div>
+</div>  
+</body>
+<script>
+  function changeView(h,v){
+    krpano.set("view.hlookat", h); //水平方向镜头移动
+    krpano.set("view.vlookat", -v);   //垂直方向镜头移动
+  }
+  function sceneChange(scene_title) {  //场景转换事件
+    var image = krpano.get('view')
+    var scene = krpano.get('scene[scene_44132301001001]')
+  }
+</script>
+</html>
